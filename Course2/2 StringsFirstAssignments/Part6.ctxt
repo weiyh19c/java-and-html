@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Part6
+comment0.text=\n\ Find\ the\ Stop\ Codon\ of\ three\ types\ with\ index.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=dnaStr\ startIndex\ stopCodon
+comment1.target=int\ findStopCodon(java.lang.String,\ int,\ java.lang.String)
+comment2.params=dna\ where
+comment2.target=java.lang.String\ findGene(java.lang.String,\ int)
+comment3.params=
+comment3.target=void\ testFindGene()
+comment4.params=dna
+comment4.target=void\ printAllGenes(java.lang.String)
+numComments=5

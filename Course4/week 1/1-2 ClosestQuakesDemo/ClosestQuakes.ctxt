@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=ClosestQuakes
+comment1.params=quakeData\ current\ howMany
+comment1.target=java.util.ArrayList\ getClosest(java.util.ArrayList,\ Location,\ int)
+comment2.params=
+comment2.target=void\ findClosestQuakes()
+comment2.text=ArrayList<QuakeEntry>\ copy\ \=\ new\ ArrayList<QuakeEntry>(quakeData);\n\ \ \ \ \ \ \ \ ArrayList<QuakeEntry>\ ret\ \=\ new\ ArrayList<QuakeEntry>();\n\ \ \ \ \ \ \ \ for(int\ j\=0;\ j\ <\ howMany;\ j++)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ int\ minIndex\ \=\ 0;\n\ \ \ \ \ \ \ \ \ \ \ \ for(int\ k\=1;\ k\ <\ copy.size();\ k++){\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ QuakeEntry\ quake\ \=\ copy.get(k);\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Location\ loc\ \=\ quake.getLocation();\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ (loc.distanceTo(current)\ <\ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ copy.get(minIndex).getLocation().distanceTo(current)){\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ minIndex\ \=\ k;\ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ ret.add(copy.get(minIndex));\n\ \ \ \ \ \ \ \ \ \ \ \ copy.remove(minIndex);\n}
+numComments=3
